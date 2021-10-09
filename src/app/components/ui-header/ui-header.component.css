@@ -1,0 +1,21 @@
+.wrapper-header {
+    background-color: var(--color-1);
+    border-bottom: solid 2px #818181;
+}
+
+.wrapper-header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    justify-content: center;
+    gap: .75rem;
+}
+
+.wrapper-header ul li {
+    padding: .75rem .5rem;
+    font-weight: 600;
+    cursor: pointer
+}

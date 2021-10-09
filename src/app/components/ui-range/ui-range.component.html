@@ -1,0 +1,12 @@
+<div class="wrapper-ui-range">
+    <div class="input-field">
+        <label for="">🆗 {{value | json}}Debes de centrar la imagen para validar ({{random}})</label>
+        <input type="range" (ngModelChange)="setRandom()" [(ngModel)]="random" min="-50" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <div class="wrapper-image">
+        <div class="range-field">
+        </div>
+        <div [style.backgroundPosition]="mockPosition" class="range-field-second">
+        </div>
+    </div>
+</div>

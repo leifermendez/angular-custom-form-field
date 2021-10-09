@@ -1,0 +1,19 @@
+<div class="wrapper-form">
+    <form [formGroup]="myForm">
+        <div>RAW: {{myForm.value | json}} Valido?:{{myForm.valid}}</div>
+
+        <div class="form-field">
+            <input formControlName="username" type="text" placeholder="Username!">
+            <small><b>Username</b></small>
+        </div>
+
+        <div class="form-field">
+            <app-ui-range formControlName="check"></app-ui-range>
+            <small><b>Ubica el slide en la posicion 45px {{myForm.invalid}}</b></small>
+        </div>
+
+        <div class="form-field">
+            <button class="btn-submit" [disabled]="myForm.invalid">Continuar</button>
+        </div>
+    </form>
+</div>
